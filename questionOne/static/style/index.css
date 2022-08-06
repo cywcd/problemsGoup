@@ -1,0 +1,63 @@
+.content-warp {
+  margin: 100px auto 0;
+  display: flex;
+  justify-content: flex-start;
+  background-color: #f3f4f6;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.content-img {
+  width: 382px;
+}
+.content-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.content-h1 {
+  color: #2f3b4e;
+  font: 700 24px/1.5 "微软雅黑";
+  display: block;
+}
+.content-p {
+  color: #6c6e7f;
+  font: 500 18px/1.5 "微软雅黑";
+  line-height: 24px;
+}
+.content-span {
+  display: block;
+  width: 100%;
+  color: #333;
+}
+
+@media only screen and (min-width: 1024px) {
+  .content-warp {
+    width: 860px;
+    flex-direction: row;
+  }
+  .content-box {
+    margin-left: 65px;
+    padding: 120px 0;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .content-warp {
+    margin-left: 10%;
+    margin-right: 10%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content-img {
+    margin-top: 50px;
+    width: 254px;
+    height: 254px;
+    border-radius: 50%;
+  }
+  .content-box {
+    padding: 40px 0;
+    text-align: center;
+  }
+  .content-h1 {
+    margin-bottom: 20px;
+  }
+}
